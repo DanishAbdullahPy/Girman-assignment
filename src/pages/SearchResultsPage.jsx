@@ -38,14 +38,9 @@ const SearchResultsPage = () => {
           <img
             src="/extractimages_11192024_22701.svg"
             alt="Logo"
-            className="h-8 w-8 object-contain"
+            className="h-18 w-18 object-contain"
           />
-          <div className="flex flex-col">
-            <h1 className="text-xl font-bold text-black">Girman</h1>
-            <span className="text-sm text-gray-500 tracking-wide">
-              Technologies
-            </span>
-          </div>
+         
         </div>
 
         <div className="flex items-center border border-gray-300 rounded-full px-4 py-2 w-1/3">
