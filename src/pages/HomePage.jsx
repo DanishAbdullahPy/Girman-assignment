@@ -18,7 +18,6 @@ function HomePage() {
           </h1>
         </div>
 
-        {/* Search Bar */}
         <div className="w-full max-w-sm md:w-1/3 md:max-w-xl mt-4 md:mt-6">
           <SearchBar />
         </div>

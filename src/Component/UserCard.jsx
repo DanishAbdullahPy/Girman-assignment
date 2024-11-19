@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-
+// State to manage dialog visibility
 const UserCard = ({ user }) => {
-  const [showDetails, setShowDetails] = useState(false); // State to manage dialog visibility
+  const [showDetails, setShowDetails] = useState(false); 
 
   // Function to toggle dialog
   const handleFetchDetails = () => {
@@ -15,7 +15,6 @@ const UserCard = ({ user }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
-      {/* Profile Image */}
       <div className="flex items-center mb-4">
         <img
           src={
@@ -71,7 +70,7 @@ const UserCard = ({ user }) => {
           </div>
         </div>
         <button
-          onClick={handleFetchDetails} // Open dialog on button click
+          onClick={handleFetchDetails} 
           className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800"
         >
           Fetch Details
@@ -82,7 +81,6 @@ const UserCard = ({ user }) => {
       {showDetails && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 w-96 relative">
-            {/* Close Button */}
             <button
               onClick={handleCloseDetails}
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
@@ -90,7 +88,6 @@ const UserCard = ({ user }) => {
               ✕
             </button>
 
-            {/* User Details */}
             <h2 className="text-xl font-bold text-gray-900 mb-4">User Details</h2>
             <div className="space-y-2">
               <p>
@@ -112,7 +109,6 @@ const UserCard = ({ user }) => {
               />
             </div>
 
-            {/* Close Button */}
             <button
               onClick={handleCloseDetails}
               className="mt-4 w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"

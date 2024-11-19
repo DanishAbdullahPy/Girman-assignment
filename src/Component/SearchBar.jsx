@@ -13,7 +13,7 @@ function SearchBar() {
   // Trigger search when pressing Enter
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
-      handleSearch(); // Call the same search logic
+      handleSearch(); 
     }
   };
 
@@ -25,7 +25,7 @@ function SearchBar() {
         placeholder="Search..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        onKeyDown={handleKeyPress} // Add Enter key functionality
+        onKeyDown={handleKeyPress} 
       />
       <button
         className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none"

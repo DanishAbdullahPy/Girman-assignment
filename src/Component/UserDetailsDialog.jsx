@@ -4,7 +4,6 @@ function UserDetailsDialog({ user, onClose }) {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg shadow-lg p-6 w-96 relative">
-        {/* Close Button */}
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
@@ -12,10 +11,8 @@ function UserDetailsDialog({ user, onClose }) {
           ✕
         </button>
 
-        {/* Header */}
         <h2 className="text-xl font-semibold text-gray-800 mb-4">Fetch Details</h2>
 
-        {/* User Details */}
         <div className="space-y-2">
           <p>
             <strong>Name:</strong> {user.first_name} {user.last_name}
@@ -33,7 +30,6 @@ function UserDetailsDialog({ user, onClose }) {
           />
         </div>
 
-        {/* Footer */}
         <div className="mt-4">
           <button
             onClick={onClose}

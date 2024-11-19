@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className="bg-white shadow-md w-full fixed top-0 z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        {/* Logo */}
+        
         <div className="flex items-center">
           <img
             src="/ok-removebg-preview.png"
@@ -16,7 +16,6 @@ function Navbar() {
           <h1 className="text-lg font-semibold ml-2 text-gray-800">Girman</h1>
         </div>
 
-        {/* Menu Icon */}
         <div
           className="cursor-pointer md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -37,7 +36,6 @@ function Navbar() {
           </svg>
         </div>
 
-        {/* Menu Items */}
         <div className={`flex-col md:flex md:flex-row md:items-center ${menuOpen ? 'block' : 'hidden'} absolute md:relative bg-white md:bg-transparent top-16 md:top-0 left-0 md:left-auto w-full md:w-auto`}>
   <a href="/search" className="px-4 py-2 block text-gray-800 hover:text-blue-500 md:py-0">Search</a>
   <a href="https://girmantech.com" className="px-4 py-2 block text-gray-800 hover:text-blue-500 md:py-0">Website</a>
